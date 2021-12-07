@@ -1,0 +1,320 @@
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    background: url("../images/topography.svg"), linear-gradient(110deg,
+    #f93d66, #6d47d9);
+    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    width: 94%;
+    margin: auto;
+}
+
+/* For media queries */
+
+.navbar-menu{
+    display: none;
+    width: 45px;
+    height: 40px;
+    margin-top: 60px;
+    background-color: #fed000;
+    transition: 1s;
+}
+
+
+#navbar {
+    display: flex;
+    width: 100%;
+    margin-top: 60px;
+    list-style-type: none;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-menu:hover{
+    display: block;
+    width: 200px;
+    background:rgba(250, 200, 0, 0.5);
+}
+
+#navbar li{
+    width: 19%;
+}
+
+#navbar li a{
+    display: inline-block;
+    width: 100%;
+    background-color: #fed000;
+    color: #111;
+    padding: 10px 15px;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+#navbar li a:hover{
+    transform: translate(0px, -5px);
+    box-shadow: 0px 6px 10px #161615;
+    /* background-color: #dfa907; */
+}
+
+/* Tacos head */
+
+.tacos-head{
+    display: flex;
+    padding-top: 25px;
+}
+
+.tacos-head .tacos-left{
+    background: url(../images/taco.jpg);
+    background-size: cover;
+    position: relative;
+    padding: 18% 34%;
+}
+
+.tacos-left h1{
+    position:absolute;
+    top: 40%;
+    left: 5%;
+    background-color: #fed000;
+    padding: 5px 10px;
+}
+
+.tacos-left h5{
+    position:absolute;
+    top: 55%;
+    left: 6%;
+    background-color: #fed000;
+    padding: 5px 10px;
+}
+
+.tacos-head .tacos-right{
+    width: 100%;
+    display: block;
+}
+
+.tacos-right .tacos-right-item{
+    position: relative;
+    width: 95%;
+    height: 47.5%;
+    margin:0% 0% 5% 5%;
+    background: #fed000;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.tacos-right-item h1{
+    position: absolute;
+    top:25%;
+    left: 30%;
+    font-size: 4em;
+}
+
+.tacos-right-item p{
+    position: absolute;
+    top:55%;
+    left: 42%;
+}
+
+/* Beer menu */
+
+.beer-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 25px;
+}
+
+.beer-menu .beer-item{
+    width: 23%;
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.beer-menu .beer-item:hover{
+    transform: scale(1.1);
+}
+
+.beer-item h1{
+    font-size: 45px;
+}
+
+.beer-item h2{
+    font-size: 15px;
+}
+
+.beer-menu p{
+    padding-top: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #555;
+}
+
+/* Featured Taco*/
+
+.featured-taco{
+    display: flex;
+    position: relative;
+    background-color: white;
+    margin-top: 25px;
+    padding: 5%;
+}
+
+.featured-taco img{
+    width: 35%;
+}
+
+.featured-taco .questo-taco-contents{
+    padding: 5% 1% 0% 1%;
+    color: #333;
+    text-shadow: 0px 0px 2px #555;
+}
+
+.featured-taco .questo-taco-contents h2{
+    padding: 5px;
+}
+
+.featured-taco .questo-taco-contents p{
+    padding: 5px 0px;
+    font-size: 15px; 
+    font-weight: 600;
+}
+
+.featured-taco .questo-taco-contents .btn{
+    color: #333;
+    background-color: #fed000;
+    padding: 10px;
+    margin-top: 10%;
+    width: 120px;
+    transition: 0.5s;
+}
+
+/* button hover */
+.featured-taco .questo-taco-contents .btn:hover{
+    /* transform: translateY(-10px); */
+    transform: scale(1.2);
+    box-shadow: 0px 0px 5px #333;
+}
+
+.btn a{
+    text-decoration: none;
+    color: #333;
+}
+
+.featured-taco .questo-taco-contents .btn img{
+    width: 8%;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+/* Photos */
+
+.gram-head{
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gram-head .grad-div{
+    width: 42%;
+    height: 10px;
+    background: linear-gradient(110deg,rgb(240, 199, 18), rgb(163, 159, 153));
+}
+
+.grad-div:first-child{
+    background: linear-gradient(110deg,rgb(148, 146, 142), rgb(240, 199, 18));
+}
+
+.grams-images{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.grams-images img{
+    width: 19%;
+    transition: 0.5s;
+}
+
+.grams-images img:hover{
+    transform: scale(1.1);
+    opacity: 0.6;
+}
+
+.break{
+    flex-basis: 100%;
+    height: 12px;
+}
+
+.footer{
+    height: 20%;
+    text-align: center;
+    padding: 50px;
+    font-size: 20px;
+    margin-top: 25px;
+    background-color: #fed000;
+}
+
+.footer a{
+    text-decoration: none;
+}
+
+@media screen and (max-width:768px) {
+    #navbar{
+        transition: 1s;
+        display: none;
+    }
+    .navbar-menu{
+        display: block;
+        transition: 1s;
+        /* margin-bottom: ; */
+    }
+    .tacos-head{
+        display: block;
+    }
+    .tacos-head .tacos-left{
+        position: static;
+    }
+
+    .tacos-head .tacos-left h1,.tacos-head .tacos-left h1{
+        position: static;
+    } 
+
+    .tacos-head .tacos-right{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: static;height: 450px;
+    }
+    .tacos-right-item{
+        position: static;
+        width: 100%;
+        /* margin: 5px 0% -5% -5%; */
+        margin: 0;
+        text-align: center;
+    }
+    .tacos-right-item h1, p{
+        text-align: center;
+    }
+    
+}
